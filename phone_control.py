@@ -28,7 +28,11 @@ time.sleep(5)
 
 try:
     for y in [1257, 1138, 1846, 1367]:
-        wd.execute_script("mobile: tap", {"tapCount": 1, "touchCount": 1, "duration": 0.5, "x": 547, "y": y})
+        wd.execute_script("mobile: tap", {"tapCount": 1,
+                                          "touchCount": 1,
+                                          "duration": 0.5,
+                                          "x": 547,
+                                          "y": y})
         time.sleep(1.5)
 
 finally:
